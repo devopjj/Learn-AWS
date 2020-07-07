@@ -15,10 +15,15 @@ cd $BASEDIR
 git add .
 bookname=`echo ${b#*$BASEDIR/}`
 tag=`date '+%Y%m%d %H:%M'`
-# push master
 git commit -m "$bookname,gitbook build at $tag"
-git push -u origin master
 done
+
+# push master
+git add .
+git commit -m " master build at $tag"
+git push -u origin master
+
+
 
 exit 1
 # build gh-pages
