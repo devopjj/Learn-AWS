@@ -592,7 +592,7 @@
 		color: rgba(0,0,0,0.5);
 	}
 
-	#portfolio .box a,#portfolio .box a:hover
+	#portfolio  a,#portfolio  a:hover
 	{
 		color: rgba(0,0,0,0.5);
 	}
