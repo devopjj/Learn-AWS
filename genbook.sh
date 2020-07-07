@@ -8,7 +8,7 @@ fi
 # build gitbook
 git checkout master
 
-find $BASEDIR -maxdepth 1 -type d -name "book_*"|while read b;do
+find $BASEDIR -maxdepth 1 -type d -name "mormoraws-*"|while read b;do
 cd $b
 gitbook build
 git add .
@@ -21,12 +21,12 @@ done
 git push -u origin master
 
 
-exit 1
+
 # build gh-pages
 git checkout gh-pages
-
+git add .
 # add gitbook to gh-pages
-find $BASEDIR -maxdepth 1 -type d -name "book_*"|while read b;do
+find $BASEDIR -maxdepth 1 -type d -name "aws-*"|while read b;do
 cd $b
 # clear cache ,temp
 git rm --cached -r .
