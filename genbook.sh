@@ -23,6 +23,9 @@ git add .
 git commit -m " master build at $tag"
 git push -u origin master
 
+
+
+exit 1
 # build gh-pages
 git checkout gh-pages
 
@@ -43,6 +46,7 @@ done
 
 # push gh-pages
 git add .
+tag=`date '+%Y%m%d %H:%M'`
 git commit -m " gh-pages build at $tag"
 git push -u origin gh-pages
 
