@@ -13,14 +13,14 @@ cd $b
 gitbook build
 cd $BASEDIR
 git add .
+bookname=`echo ${b#*$BASEDIR/}`
 tag=`date '+%Y%m%d %H:%M'`
-git commit -m "$b,gitbook build at $tag"
+git commit -m "$bookname,gitbook build at $tag"
 done
 
-exit 1
 # push master
 git push -u origin master
-
+exit 1
 git checkout gh-pages
 # add gitbook to gh-pages
 find $BASEDIR -maxdepth 1 -type d -name "book_*"|while read b;do
