@@ -8,7 +8,7 @@ fi
 # build gitbook
 git checkout master
 
-find $BASEDIR -maxdepth 1 -type d -name "mormoraws-*"|while read b;do
+find $BASEDIR -maxdepth 1 -type d -name "aws-*"|while read b;do
 cd $b
 gitbook build
 git add .
