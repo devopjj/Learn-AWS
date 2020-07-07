@@ -23,7 +23,6 @@ git add .
 git commit -m " master build at $tag"
 git push -u origin master
 
-exit 1
 # build gh-pages
 git checkout gh-pages
 
