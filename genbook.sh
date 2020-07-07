@@ -19,8 +19,7 @@ git commit -m "$bookname,gitbook build at $tag"
 done
 
 # push master
-git add .
-git commit -m " master build at $tag"
+
 git push -u origin master
 
 
