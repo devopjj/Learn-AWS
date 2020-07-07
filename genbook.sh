@@ -16,19 +16,21 @@ gitbook build
 
 git checkout gh-pages
 cp -r _book/* .
-git add .
-git commit -m $1
+
 #git push -u origin gh-pages
 git checkout master
 done
 
 # commit master
-git checkout master
 cd $BASEDIR
+git checkout master
 git add .
 git commit -m $1
 git push -u origin master
 
 # commit gh-pages
+cd $BASEDIR
 git checkout gh-pages
+git add .
+git commit -m $1
 git push -u origin gh-pages
