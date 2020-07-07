@@ -1,5 +1,7 @@
 *~
 _book
 portal
+mdbook
+gitbook
 */_book/
 .DS_Store
