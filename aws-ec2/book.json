@@ -1,0 +1,8 @@
+{
+"title": "My Awesome Book",
+"description": "This is such a great book!",
+ "plugins": ["mathjax"],
+ "links" : {
+    "sidebar" : {"Home" : "http://devopjj.com"  }
+  }
+}
