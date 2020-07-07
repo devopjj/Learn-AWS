@@ -13,7 +13,8 @@ cd $b
 gitbook build
 cd $BASEDIR
 git add .
-git commit -m "$b,gitbook buil"
+tag=`date '+%Y%m%d %H:%M'`
+git commit -m "$b,gitbook build at $tag"
 done
 
 exit 1
