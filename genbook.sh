@@ -21,7 +21,7 @@ done
 git push -u origin master
 
 
-
+exit 1
 # build gh-pages
 git checkout gh-pages
 
