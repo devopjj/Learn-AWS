@@ -37,7 +37,7 @@ cp -r _book/* .
 git add .
 bookname=`echo ${b#*$BASEDIR/}`
 tag=`date '+%Y%m%d %H:%M'`
-git commit -m "$bokname generate on $tag"
+git commit -m "$bookname generate on $tag"
 done
 
 # push gh-pages
